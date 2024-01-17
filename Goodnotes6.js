@@ -1,7 +1,8 @@
-#!name = GG6
-
+#!name=Unlock Any Revenuecat
+#!desc=Auto All Revenuecat, GoodbyeRevenuecat
 [MITM]
 hostname = %APPEND% api.revenuecat.com, isi.csan.goodnotes.com
+
 [Header Rewrite]
 #Anticache
 .+ header-del if-modified-since
