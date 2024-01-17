@@ -9,5 +9,5 @@ hostname = %APPEND% api.revenuecat.com, isi.csan.goodnotes.com
 .+ header-del X-RevenueCat-ETag
 .+ header-del x-revenuecat-etag
 
-[Rewrite_Local]
+[Script]
 ^https:\/\/(api\.revenuecat|isi.csan.goodnotes)\.com\/.+\/(receipts$|subscribers\/[^/]+$|offers$) https://api.langkhach89.workers.dev header
