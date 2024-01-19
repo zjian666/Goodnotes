@@ -21,19 +21,19 @@
 
 # Documents
 ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh url script-request-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js
-hostname = license.pdfexpert.com
+# hostname = license.pdfexpert.com
 
 # Relens
 ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/ReLens.js
-hostname = buy.itunes.apple.com
+# hostname = buy.itunes.apple.com
 
 # PS Express
 ^https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/PSExpress.js
-hostname = lcs-mobile-cops.adobe.io
+# hostname = lcs-mobile-cops.adobe.io
 
 # 印章全能王
 ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/yzqnw.js
-hostname = buy.itunes.apple.com
+# hostname = buy.itunes.apple.com
 
 # 网易云词典
 ^https:\/\/dict\.youdao\.com\/vip\/user\/status url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/wyydcd.js 
@@ -45,14 +45,16 @@ hostname = buy.itunes.apple.com
 ^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo url reject-dict
 ^https:\/\/dict\.youdao\.com\/dictusertask\/system url reject-dict
 ^https:\/\/dictvip-business\.youdao\.com\/home\/ad url reject-dict
-hostname = dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com
+# hostname = dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com
 
 # SexAction
 ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/SexActions.js
 ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/SexActions.js
-hostname = api.revenuecat.com
+# hostname = api.revenuecat.com
 
 
 
-hostname = *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, pan.baidu.com, *.aliyundrive.com, *.alipan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, server.*.com
+hostname = *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, pan.baidu.com, *.aliyundrive.com, *.alipan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, server.*.com, license.pdfexpert.com, buy.itunes.apple.com, lcs-mobile-cops.adobe.io, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, api.revenuecat.com
+
+
 
