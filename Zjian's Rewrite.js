@@ -18,3 +18,7 @@ hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
 # Fimo_复古胶片相机
 hostname = server.*.com
 ^https?:\/\/server\.(yoyiapp|zbisq)\.com url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
+
+# Relens
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/ReLens.js
+hostname = buy.itunes.apple.com
