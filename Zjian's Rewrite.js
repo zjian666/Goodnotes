@@ -18,3 +18,7 @@ hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
 # Fimo_复古胶片相机
 hostname = server.*.com
 ^https?:\/\/server\.(yoyiapp|zbisq)\.com url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
+
+# Documents
+^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh url script-request-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/Documents.js
+hostname = license.pdfexpert.com
