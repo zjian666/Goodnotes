@@ -5,7 +5,9 @@
 
 # 百度网盘，一刻相册 解锁部分功能
 # hostname = pan.baidu.com
-^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js
+# ^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js
+[Script]
+http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path = https://gitlab.com/isous/loonresource/-/raw/main/Script/BaiduNetDisk/BaiduNetDisk_crack.js, requires-body = true, tag = 解锁SVIP权益
 
 # 阿里云盘 净化/解锁SVIP
 # hostname = *.aliyundrive.com, *.alipan.com
@@ -52,9 +54,13 @@
 ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/SexActions.js
 # hostname = api.revenuecat.com
 
+# 百度文库  
+[Rewrite]
+^https:\/\/appwk\.baidu\.com\/(naapi\/(recommend\/recommenddoc|wkcircle\/messagetab|search\/wkhotwords|api\/wmadopt)|appapi\/(search\/hot|donate\/detail)|xpage\/interface\/wknaad) reject
+[Script]
+http-response ^https:\/\/appwk\.baidu\.com\/naapi\/(user\/getinfo|doc\/getdocdownloadcopywriter) script-path = https://gitlab.com/isous/loonresource/-/raw/main/Script/BaiduWenku/BaiduWenku_crack.js, requires-body = true, tag = 百度文库解锁
 
-
-hostname = *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, pan.baidu.com, *.aliyundrive.com, *.alipan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, server.*.com, license.pdfexpert.com, buy.itunes.apple.com, lcs-mobile-cops.adobe.io, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, api.revenuecat.com
+hostname = *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, pan.baidu.com, *.aliyundrive.com, *.alipan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, server.*.com, license.pdfexpert.com, buy.itunes.apple.com, lcs-mobile-cops.adobe.io, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, api.revenuecat.com, appwk.baidu.com
 
 
 
