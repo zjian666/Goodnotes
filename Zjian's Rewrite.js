@@ -10,3 +10,11 @@ hostname = pan.baidu.com
 # 阿里云盘 净化/解锁SVIP
 hostname = *.aliyundrive.com, *.alipan.com
 ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
+
+# 美图秀秀
+hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
+^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
+
+# Fimo_复古胶片相机
+hostname = server.*.com
+^https?:\/\/server\.(yoyiapp|zbisq)\.com url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/fimo.js
