@@ -65,11 +65,14 @@ http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-
 [Script]
 http-response ^https:\/\/appwk\.baidu\.com\/naapi\/(user\/getinfo|doc\/getdocdownloadcopywriter) script-path = https://gitlab.com/isous/loonresource/-/raw/main/Script/BaiduWenku/BaiduWenku_crack.js, requires-body = true, tag = 百度文库解锁
 
+# 灵敢提词器
+^http[s]?:\/\/teleprompter-api.quthing.com url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/quthing.js
+# hostname = teleprompter-api.quthing.com
 
 
 
 
-hostname = *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, pan.baidu.com, *.aliyundrive.com, *.alipan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, server.*.com, license.pdfexpert.com, buy.itunes.apple.com, lcs-mobile-cops.adobe.io, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, api.revenuecat.com, appwk.baidu.com, *.api.moji.com
+hostname = *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, pan.baidu.com, *.aliyundrive.com, *.alipan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, server.*.com, license.pdfexpert.com, buy.itunes.apple.com, lcs-mobile-cops.adobe.io, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, api.revenuecat.com, appwk.baidu.com, *.api.moji.com, teleprompter-api.quthing.com
 
 
 
