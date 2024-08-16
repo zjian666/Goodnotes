@@ -34,16 +34,12 @@ http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-
 ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/ReLens.js
 # hostname = buy.itunes.apple.com
 
-# PS Express
-^https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/PSExpress.js
-# hostname = lcs-mobile-cops.adobe.io
-
 # 印章全能王
 ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/yzqnw.js
 # hostname = buy.itunes.apple.com
 
 # 网易云词典
-^https:\/\/dict\.youdao\.com\/vip\/user\/status url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/wyydcd.js 
+^https:\/\/dict\.youdao\.com\/vip\/user\/status url script-response-body https://raw.githubusercontent.com/pxx917144686/ios/master/rewrite/QuantumultX/YD.js 
 ^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab url reject-dict
 ^https:\/\/dict\.youdao\.com\/homepage\/tile url reject-dict
 ^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig url reject-dict
@@ -53,11 +49,6 @@ http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-
 ^https:\/\/dict\.youdao\.com\/dictusertask\/system url reject-dict
 ^https:\/\/dictvip-business\.youdao\.com\/home\/ad url reject-dict
 # hostname = dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com
-
-# SexAction
-^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/SexActions.js
-^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/SexActions.js
-# hostname = api.revenuecat.com
 
 # 百度文库  
 [Rewrite]
