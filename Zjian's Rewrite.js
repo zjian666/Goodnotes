@@ -19,8 +19,8 @@ http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-
 ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
 
 # 美图秀秀
-# hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
-^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js
+# hostname= api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
+^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
 
 # Fimo_复古胶片相机
 # hostname = server.*.com
@@ -63,7 +63,7 @@ http-response ^https:\/\/appwk\.baidu\.com\/naapi\/(user\/getinfo|doc\/getdocdow
 
 
 
-hostname = *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, pan.baidu.com, *.aliyundrive.com, *.alipan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com, server.*.com, license.pdfexpert.com, buy.itunes.apple.com, lcs-mobile-cops.adobe.io, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, api.revenuecat.com, appwk.baidu.com, *.api.moji.com, teleprompter-api.quthing.com
+hostname = *.cyapi.cn, *.caiyunapp.com, adx.sogaha.cn, pan.baidu.com, *.aliyundrive.com, *.alipan.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, server.*.com, license.pdfexpert.com, buy.itunes.apple.com, lcs-mobile-cops.adobe.io, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, api.revenuecat.com, appwk.baidu.com, *.api.moji.com, teleprompter-api.quthing.com
 
 
 
